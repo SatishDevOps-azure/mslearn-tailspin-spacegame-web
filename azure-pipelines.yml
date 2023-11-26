@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 trigger:
   - '*'
   
@@ -50,3 +51,11 @@ trigger:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
     condition: succeeded()
+=======
+pool: MyAgentPool
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+steps:
+- bash: echo hello world
+>>>>>>> fbbbcc983b675b3296a1c27d6f36441de9ef79c0
